@@ -4,11 +4,9 @@
     <iframe width="100%" height="700px" src="https://www.youtube.com/embed/jLj2B4Azhx4" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Required skills
 
-<ul class="actions">
-    <li><a href="https://instantos.io/youtube/shortcuts" class="button special icon fa-youtube">shortcuts</a></li>
-</ul>
+???+ tip "Required skills"
+     [:material-arrow-right:Shortcuts](shortcuts.md)
 
 To shut down your computer, press Super + Ctrl + Q to open the shutdown menu.
 From there you can choose between multiple options. There also is a shutdown

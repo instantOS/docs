@@ -4,11 +4,8 @@
     <iframe width="100%" height="700px" src="https://www.youtube.com/embed/V9zdW9ikStQ" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Required skills
-
-<ul class="actions">
-    <li><a href="https://instantos.io/youtube/tags" class="button special icon fa-youtube">tags</a></li>
-</ul>
+???+ tip "Required skills"
+     [:material-arrow-right:Tags](tags.md)
 
 If you are coming from Windows or another desktop environment, you are likely
 familiar with alt-tab menus. To use it, hold down alt and press tab multiple

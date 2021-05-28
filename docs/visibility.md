@@ -4,15 +4,9 @@
     <iframe width="100%" height="700px" src="https://www.youtube.com/embed/5_PIWl_iI-s" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Required skills
-
-<ul class="actions">
-    <li><a href="https://instantos.io/youtube/shortcuts" class="button special icon fa-youtube">shortcuts</a></li>
-</ul>
-<ul class="actions">
-    <li><a href="https://instantos.io/youtube/tags" class="button special icon fa-youtube">tags</a></li>
-</ul>
-
+???+ tip "Required skills"
+     [:material-arrow-right:Shortcuts](shortcuts.md)
+     [:material-arrow-right:Tags](tags.md)
 
 You can toggle several visual elements of instantOS
 You can toggle the top bar with Super + B

@@ -4,11 +4,8 @@
     <iframe width="100%" height="700px" src="https://www.youtube.com/embed/I2iQW_VqfAc" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Required skills
-
-<ul class="actions">
-    <li><a href="https://instantos.io/youtube/assist" class="button special icon fa-youtube">instantASSIST</a></li>
-</ul>
+???+ tip "Required skills"
+     [:material-arrow-right:instantASSIST](instantassist.md)
 
 Keybindings:
 Super + Print: take screenshot of selected area to the pictures folder

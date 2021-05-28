@@ -10,4 +10,3 @@ it if you prefer that.
 ## Useful links
 
 - [Keybindings](hotkeys.md)
-
