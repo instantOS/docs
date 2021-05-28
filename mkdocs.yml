@@ -1,0 +1,31 @@
+site_name: instantOS
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  logo: assets/instantos.png
+
+markdown_extensions:
+  - footnotes
+
+extra:
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/paperbenni
+    - icon: fontawesome/brands/github
+      link: https://github.com/instantOS
+    - icon: fontawesome/brands/discord
+      link: https://discord.io/instantOS
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/instantOS/community?source=orgpage
+
+extra_css:
+  - stylesheets/extra.css
+
