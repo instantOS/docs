@@ -11,9 +11,16 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
   logo: assets/instantos.png
+  features:
+  - navigation.instant
+
+
 
 markdown_extensions:
   - footnotes
+  - toc:
+          permalink: true
+  - pymdownx.keys
 
 extra:
   social:
@@ -28,4 +35,29 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Basics:
+    - Open applications: apps.md
+    - Close applications: close.md
+    - Shut down: shutdown.md
+    - Shortcuts: shortcuts.md
+    - Tags: tags.md
+    - Layouts: layouts.md
+    - Floating windows: tags.md
+    - Audio: audio.md
+    - Screenshots: screenshots.md
+
+  - Extra features:
+    - Overlays: overlays.md
+    - Scratchpad: scratchpad.md
+    - Alt-tab: alttab.md
+    - Sticky windows: sticky.md
+  - Power-User Features:
+    - instantASSIST: instantassist.md
+    - quickmenu: quickmenu.md
+    - visibility options: visibility.md
+    - customizing: customize.md
+    - terminal: terminal.md
 

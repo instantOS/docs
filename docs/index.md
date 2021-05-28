@@ -6,3 +6,7 @@ to documentation pages where you can learn those things.
 
 Each feature has a short video explaining it or a text based description below
 it if you prefer that.
+
+## Useful links
+
+- [Keybindings](hotkeys.md)

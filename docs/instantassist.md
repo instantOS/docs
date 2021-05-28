@@ -13,7 +13,7 @@
 instantOS comes with instantASSIST, a collection of small little programs that
 can be accessed using only a few keystrokes.
 
-Access it using Super + A. This will pop up a menu showing all available
+Access it using ++super+a++. This will pop up a menu showing all available
 keystrokes.
 Hovering over a letter will display a short description.
 Press one of them to activate the corresponding section. Some
