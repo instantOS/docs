@@ -21,6 +21,12 @@ markdown_extensions:
   - toc:
           permalink: true
   - pymdownx.keys
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra:
   social:
@@ -56,8 +62,8 @@ nav:
     - Sticky windows: sticky.md
   - Power-User Features:
     - instantASSIST: instantassist.md
-    - quickmenu: quickmenu.md
-    - visibility options: visibility.md
-    - customizing: customize.md
-    - terminal: terminal.md
+    - Quickmenu: quickmenu.md
+    - Visibility options: visibility.md
+    - Customizing: customize.md
+    - Terminal: terminal.md
 

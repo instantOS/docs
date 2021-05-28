@@ -4,11 +4,9 @@
     <iframe width="100%" height="700px" src="https://www.youtube.com/embed/3zBLEHHdMmQ" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Required skills
 
-<ul class="actions">
-    <li><a href="https://instantos.io/youtube/shortcuts" class="button special icon fa-youtube">instantASSIST</a></li>
-</ul>
+???+ tip "Required skills"
+    :material-arrow-right: [Shortcuts](shortcuts.md)
 
 instantOS comes with instantASSIST, a collection of small little programs that
 can be accessed using only a few keystrokes.
@@ -22,8 +20,8 @@ same menu. Press the key again to go with the default one, press one of the
 keys listed to execute their corresponding action.  These key combinations are
 called assists.  
 
-For example: The w-assist consists of pressing Super + A to activate the menu
-and then typing in "w".  The w-assist is responsible for quickly changing your
+For example: The w-assist consists of pressing ++super+a++ to activate the menu
+and then typing in ++w++.  The w-assist is responsible for quickly changing your
 wallpaper. It will list some other options. Press w again to execute the
 default action which is generating a new wallpaper from a random source.
 
