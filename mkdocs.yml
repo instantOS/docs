@@ -54,7 +54,6 @@ nav:
     - Floating windows: tags.md
     - Audio: audio.md
     - Screenshots: screenshots.md
-
   - Extra features:
     - Overlays: overlays.md
     - Scratchpad: scratchpad.md
@@ -66,4 +65,6 @@ nav:
     - Visibility options: visibility.md
     - Customizing: customize.md
     - Terminal: terminal.md
-
+  - Noob guides:
+    - Vim bindings: vim.md
+    - Installation: installguide.md
