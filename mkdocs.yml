@@ -17,6 +17,7 @@ theme:
 
 
 markdown_extensions:
+  - attr_list
   - footnotes
   - toc:
           permalink: true

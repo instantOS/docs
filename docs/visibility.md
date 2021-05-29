@@ -5,7 +5,7 @@
 </div>
 
 ???+ tip "Required skills"
-     [:material-arrow-right:Shortcuts](shortcuts.md)
+     [:material-arrow-right:Shortcuts](shortcuts.md)  
      [:material-arrow-right:Tags](tags.md)
 
 You can toggle several visual elements of instantOS

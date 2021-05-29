@@ -42,6 +42,8 @@ You need
   - 64Bit processor
 - An internet connection
 
+## Installation steps
+
 ### 1. Download ISO
 
 Head over to [https://instantos.io/download](https://instantos.io/download) and

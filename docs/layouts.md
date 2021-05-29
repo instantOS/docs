@@ -1,11 +1,11 @@
-# layouts
+# Layouts
 
 <div align="center">
     <iframe width="100%" height="700px" src="https://www.youtube.com/embed/NMs8b2mBCTA" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ???+ tip "Required skills"
-     [:material-arrow-right:shortcuts](shortcuts.md)
+     [:material-arrow-right:shortcuts](shortcuts.md)  
      [:material-arrow-right:Opening applications](apps.md)
 
 ## Basics
@@ -36,51 +36,53 @@ next to it swap places.
 
 ## Rundown of all layouts
 
-### Tile +
+### Tile ```+```
 
 This layout has a master area on the left and a stack area on the right.
 
-### Grid \#
+### Grid ```\#```
 
-<p><span class="image right"><img src="https://instantos.io/images/layouts/grid.png" alt="image missing" height="60" /></span>
-Applications get arranged into a grid where each one gets resized to the same size. It does not distinguish between master or stack.
-</p>
+![Placeholder](https://instantos.io/images/layouts/grid.png)
 
-### Horizontal stack 1 ===
+Applications get arranged into a grid where each one gets resized to the same
+size. It does not distinguish between master or stack.
 
-<p><span class="image right"><img src="https://instantos.io/images/layouts/horizstack1.png" alt="image missing" height="60" /></span>
-This works basically the same as the tiling layout except the tiling is done horizontally.
-</p>
+### Horizontal stack 1 ```===```
 
-### Horizontal stack 2 TTT
+![Placeholder](https://instantos.io/images/layouts/horizstack1.png)
+This works basically the same as the tiling layout except the tiling is done
+horizontally.
 
-<p><span class="image right"><img src="https://instantos.io/images/layouts/horizstack2.png" alt="image missing" height="60" /></span>
-This works basically the same as the Horizontal stack 1 layout, but the stack itself is tiled vertically
-</p>
+### Horizontal stack 2 ```TTT```
 
-### Monocle [n]
+![Placeholder](https://instantos.io/images/layouts/horizstack2.png)
+This works basically the same as the Horizontal stack 1 layout, but the stack
+itself is tiled vertically.
 
-<p><span class="image right"><img src="https://instantos.io/images/layouts/monocle.png" alt="image missing" height="60" /></span>
-All windows are Fullscreen and layered on top of each other. The window currently in focus is always on top
-</p>
+### Monocle ```[n]```
 
-### Floating _
+![Place](https://instantos.io/images/layouts/monocle.png)
+All windows are Fullscreen and layered on top of each other. The window
+currently in focus is always on top.
 
-<p><span class="image right"><img src="https://instantos.io/images/layouts/floating.png" alt="image missing" height="60" /></span>
-This completely disables window tiling. Use this to get a floating WM like experience.
-</p>
+### Floating ```_```
 
-### Overview O
+![Placeholder](https://instantos.io/images/layouts/floating.png)
+This completely disables window tiling. Use this to get a floating WM like
+experience.
 
-<p><span class="image right"><img src="https://instantos.io/images/layouts/overview.png" alt="image missing" height="60" /></span>
-This is the overview layout. It is used by the overview feature. It stacks all windows in a way that each of them is visible but without resizing them from their previous layout. This can be used to quickly switch between windows.
-</p>
+### Overview ```O```
 
-### Half stack D n
+![Placeholder](https://instantos.io/images/layouts/overview.png)
+This is the overview layout. It is used by the overview feature. It stacks all
+windows in a way that each of them is visible but without resizing them from
+their previous layout. This can be used to quickly switch between windows.
 
-<p><span class="image right"><img src="https://instantos.io/images/layouts/halfstack.png" alt="image missing" height="60" /></span>
+### Half stack ```D n```
+
+![Placeholder](https://instantos.io/images/layouts/halfstack.png)
+
 This is a hybrid of the tiling and monocle layout. The master area is tiled normally, but the stack works like the monocle layout with all windows layered on top of each other.
-</p>
 
 ## Switching layouts
 
