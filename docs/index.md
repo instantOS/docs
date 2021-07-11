@@ -10,3 +10,6 @@ it if you prefer that.
 ## Useful links
 
 - [Keybindings](hotkeys.md)
+- [instantOS Website](http://instantos.io)
+- [YouTube](http://youtube.com/paperbenni)
+- [Discord](https://discord.io/instantos)
