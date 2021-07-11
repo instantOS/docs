@@ -8,10 +8,11 @@
      [:material-arrow-right:Shortcuts](shortcuts.md)  
      [:material-arrow-right:Tags](tags.md)
 
-You can toggle several visual elements of instantOS
-You can toggle the top bar with Super + B
+You can toggle several visual elements of instantOS You can toggle the top bar
+with ++super+b++
 
-Super + Shift + S hides all tags without a window on them
-Super + Alt + S changes from tag numbers to symbols. They behave identically
+++super+shift+s++ hides all tags without a window on them
+
+++super+alt+s++ changes from tag numbers to symbols. They behave identically
 but might be easier to remember for some people.
 

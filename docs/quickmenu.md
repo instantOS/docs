@@ -1,7 +1,7 @@
 # Quick menu
 
 The quick menu is like a scriptable quick favorites menu.
-You can access it by pressing Super + V or right clicking on the start menu
+You can access it by pressing ++super+v++ or right clicking on the start menu
 
 By default it will be empty and only display the option to close or edit it.
 You can move your selection by typing in the name of an entry or using the arrow

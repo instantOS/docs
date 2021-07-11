@@ -30,7 +30,7 @@ Drag a floating window over a tag indicator to move it there and activate the ta
 ### Activating multiple tags
 
 Multiple tags can be toggled so all windows assigned to these tags become visible.
-The key binding to do this is Super + Ctrl + tag-number. Right clicking on the
+The key binding to do this is ++super+ctrl+"Tag-number"++. Right clicking on the
 tag indicator achieves the same thing. Actions that focus on a single tag like
 following a window or clicking on the indicator will deactivate all additional tags.
 

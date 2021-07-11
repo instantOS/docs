@@ -11,16 +11,16 @@ Floating mode allows you to freely move and resize any window.
 
 ### Activating floating mode
 
-To make a window float, press Super + Shift + Space.
+To make a window float, press ++super+shift+space++.
 Alternatively you can just move the window (see "Moving Windows" below) and
 it'll go into floating mode automatically.
-To make a window return to the tiling layout, either do Super + Shift + Space
+To make a window return to the tiling layout, either do ++super+shift+space++
 again or drag it to the top of the display and let go of it just like with
 regular desktop environments.
 
 ### Moving windows
 
-To move a floating window, hold down the super key and move it around using
+To move a floating window, hold down the ++super++ key and move it around using
 the left mouse button. You can also move it by dragging out its title
 indicator like on regular desktop environments. This will work no matter where
 the window is, the cursor will be warped to the window.
@@ -54,5 +54,4 @@ Dragging a window to the left/right side of the screen and letting go of it will
 move it to the adjacent tag.
 The lower third of the screen will move it there and not follow it, anything
 above that will follow the window to that tag.
-
 

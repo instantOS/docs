@@ -13,5 +13,4 @@ times to toggle through a list of all open applications. Letting go of alt,
 pressing enter or click on an entry will switch to the application. You can also
 press tab just a single time and proceed to type in the application name.
 There is also a more visual version available. It can be accessed using
-Super + ^ (the caret key) or by right clicking on the status bar in the top right.
-
+++super+"^"++ (the caret key) or by right clicking on the status bar in the top right.

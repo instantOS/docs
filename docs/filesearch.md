@@ -13,7 +13,7 @@ instantSEARCH section below.
 ## instantSEARCH
 
 instantOS comes with a tool called instantSEARCH. It is accessed with the
-shortcut Super + Alt + F. It is using mlocate and plocate as a backend and
+shortcut ++super+alt+f++. It is using mlocate and plocate as a backend and
 works by scanning your entire hard drive first to build and index that it then
 searches through that index for your search term. This allows you to search
 through everything on your entire drive in less than a second (tested with over

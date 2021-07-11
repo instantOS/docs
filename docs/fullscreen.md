@@ -11,7 +11,7 @@ to still retain multitasking functionality.
 
 This feature allows you to temporarily put a window into fullscreen mode
 without impacting any of the other windows or its actual position and size. It
-can be activated using Super + Ctrl + F and using it a second time restores the
+can be activated using ++super+ctrl+f++ and using it a second time restores the
 window to its normal behavior.
 
 For example you could be in the grid layout working with lots of windows but
@@ -27,13 +27,13 @@ application will still think it is in full screen.  This can be used to move
 applications that would otherwise be stuck on the monitor they launched on or
 to correct applications that behave incorrectly.
 
-To toggle fakefullscreen, press Super + Shift + F. If the application is not
+To toggle fakefullscreen, press ++super+shift+f++. If the application is not
 already in fullscreen, this will not have any noticeable effect.  But as soon
 as the application goes into fullscreen, it will not cover the entire screen,
 but can still be put into layouts, moved around in floating mode or even
 resized. Some applications will not like being resized while in full screen
 mode, so be careful with that. Fakefullscreen can also be activated for
-applications that are already in fullscreen mode.  Pressing Super + Shift + F a
+applications that are already in fullscreen mode.  Pressing ++super+shift+f++ a
 second time will deactivate fakefullscreen.
 
 Applications for this are forcing games that like to appear in fullscreen and

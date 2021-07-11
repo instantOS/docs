@@ -8,7 +8,7 @@
 ???+ tip "Required skills"
      [:material-arrow-right:Shortcuts](shortcuts.md)
 
-To shut down your computer, press Super + Ctrl + Q to open the shutdown menu.
+To shut down your computer, press ++super+ctrl+q++ to open the shutdown menu.
 From there you can choose between multiple options. There also is a shutdown
 button to the right of the layout indicator. It only appears when all
 applications on the current tag are closed, encouraging you to do so before

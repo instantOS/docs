@@ -5,9 +5,12 @@
 </div>
 
 ???+ tip "Required skills"
-     [:material-arrow-right:instantASSIST](instantassist.md)
+    [:material-arrow-right:instantASSIST](instantassist.md)
 
-Keybindings:
-Super + Print: take screenshot of selected area to the pictures folder
-Super + Ctrl + Print: take screenshot of selected area to the clipboard
-Super + Shift + Print: take fullscreen screenshot to the clipboard
+## Keybindings
+
+| Binding               | Functionality                                           |
+| --------------------- | ------------------------------------------------------- |
+| ++super+print++       | take screenshot of selected area to the pictures folder |
+| ++super+ctrl+print++  | take screenshot of selected area to the clipboard       |
+| ++super+shift+print++ | take fullscreen screenshot to the clipboard             |

@@ -7,8 +7,8 @@ the default setup before changing it.
 
 ## Settings manager
 
-The control panel can be opened by Super + left clicking on the status text,
-with Super + Ctrl + C, from the start menu or by typing instantsettings in the
+The control panel can be opened by ++super+left++ clicking on the status text,
+with ++super+ctrl+c++, from the start menu or by typing instantsettings in the
 terminal.
 
 ## Dotfiles
