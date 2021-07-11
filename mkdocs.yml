@@ -12,15 +12,14 @@ theme:
         name: Switch to light mode
   logo: assets/instantos.png
   features:
-  - navigation.instant
-  - navigation.tabs
-
+    - navigation.instant
+    - navigation.tabs
 
 markdown_extensions:
   - attr_list
   - footnotes
   - toc:
-          permalink: true
+      permalink: true
   - pymdownx.keys
   - admonition
   - pymdownx.details
@@ -46,26 +45,36 @@ extra_css:
 nav:
   - Home: index.md
   - Basics:
-    - Open applications: apps.md
-    - Close applications: close.md
-    - Shut down: shutdown.md
-    - Shortcuts: shortcuts.md
-    - Tags: tags.md
-    - Layouts: layouts.md
-    - Floating windows: tags.md
-    - Audio: audio.md
-    - Screenshots: screenshots.md
+      - Keybindings: hotkeys.md
+      - Open applications: apps.md
+      - Close applications: close.md
+      - Shut down: shutdown.md
+      - Shortcuts: shortcuts.md
+      - Tags: tags.md
+      - Layouts: layouts.md
+      - Floating windows: tags.md
+      - Audio: audio.md
+      - Screenshots: screenshots.md
+      - Updates: update.md
+      - Fullscreen: fullscreen.md
   - Extra features:
-    - Overlays: overlays.md
-    - Scratchpad: scratchpad.md
-    - Alt-tab: alttab.md
-    - Sticky windows: sticky.md
+      - File search: filesearch.md
+      - Overlays: overlays.md
+      - Scratchpad: scratchpad.md
+      - Alt-tab: alttab.md
+      - Sticky windows: sticky.md
+      - Window drawing: drawing.md
+      - Notification center: notify.md
   - Power-User Features:
-    - instantASSIST: instantassist.md
-    - Quickmenu: quickmenu.md
-    - Visibility options: visibility.md
-    - Customizing: customize.md
-    - Terminal: terminal.md
+      - instantASSIST: instantassist.md
+      - Quickmenu: quickmenu.md
+      - Visibility options: visibility.md
+      - Customizing: customize.md
+      - WM configuration: wmsettings.md
+      - Terminal: terminal.md
   - Noob guides:
-    - Vim bindings: vim.md
-    - Installation: installguide.md
+      - Vim bindings: vim.md
+      - Installation: installguide.md
+  - Gaming (WIP):
+      - Beginner's guide: gamebegin.md
+      - Guide: gaming.md
