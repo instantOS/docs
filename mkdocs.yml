@@ -76,5 +76,5 @@ nav:
       - Vim bindings: vim.md
       - Installation: installguide.md
   - Gaming (WIP):
-      - Beginner's guide: gamebegin.md
-      - Guide: gaming.md
+      - Beginners guide: gaming/gamebegin.md
+      - Guide: gaming/gaming.md
