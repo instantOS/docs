@@ -1,7 +1,7 @@
-name: Deploy MkDocs
+name: deploymkdocs
 on: [push]
 jobs:
-  Deploy to gh sites:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: deploy
