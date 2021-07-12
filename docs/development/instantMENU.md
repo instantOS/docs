@@ -26,7 +26,7 @@ Entries can also be styled with the default color pallete
 
 ```txt
 echo ':b Icon' | instantmenu -h -1
-       
+      ↑↑ ↑↑
       || ||
       || ||
       || ||
