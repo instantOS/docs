@@ -78,3 +78,6 @@ nav:
   - Gaming (WIP):
       - Beginners guide: gaming/gamebegin.md
       - Guide: gaming/gaming.md
+  - Development:
+      - status bar: development/status.md
+      - instantMENU: development/instantMENU.md
