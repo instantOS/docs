@@ -9,4 +9,3 @@ the current window take that size.
 You can also draw on different monitors.
 Clicking on a different window while in drawing mode will move the current
 window on top of it and copy its dimensions.
-

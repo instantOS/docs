@@ -38,3 +38,10 @@ instantOS will use it instead of the default one as long as it's installed in /u
 The appearance section of the control panel allows changing the Gtk theme,
 font, icon set and cursor.
 
+### Rework notice
+
+The theming system is planned to get a rework basing it around
+[imosid](https://github.com/instantos/imosid) once it is stable enough. This
+will prevent it from ever accidentally overwriting any user customisations
+while not requiring to be completely disabled if the user wants to customize on
+a file level.

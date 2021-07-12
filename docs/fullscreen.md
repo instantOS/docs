@@ -41,4 +41,3 @@ on the wrong monitor to behave and make video players or websites that don't
 support picture-in-picture functionality "support" it by entering fullscreen
 mode and then floating them around with fakefullscreen.
 
-

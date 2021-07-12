@@ -24,3 +24,9 @@ There are four main ways to play games on Linux
    contains thousands of community made installers. It allows playing native
    games, can be used as a launcher for steam games and games running in an
    emulator and most interestingly, comes with its own wine versions.
+
+//TODO
+
+- use steam proton in lutris
+- setup guide
+- compare different methods
