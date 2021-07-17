@@ -33,7 +33,7 @@ because most of the things you could add into a terminal emulator can be done
 much better and reliable using tmux.
 
 ??? info "st-instantos patches and changes"
-This is a list of changes made to the vanilla st source
+    This is a list of changes made to the vanilla st source
     - xresources support
     - colored emoji
     - font zooming with ctrl +/-

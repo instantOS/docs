@@ -5,7 +5,7 @@
 </div>
 
 ???+ tip "Required skills"
-     [:material-arrow-right:Shortcuts](shortcuts.md)
+    [:material-arrow-right:Shortcuts](shortcuts.md)
 
 Opening applications can be done in several ways.
 

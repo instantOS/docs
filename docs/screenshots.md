@@ -5,7 +5,7 @@
 </div>
 
 ???+ tip "Required skills"
-[:material-arrow-right:instantASSIST](instantassist.md)
+    [:material-arrow-right:instantASSIST](instantassist.md)
 
 ## Keybindings
 
@@ -16,7 +16,7 @@
 | ++super+shift+print++ | take fullscreen screenshot to the clipboard             |
 
 ??? info "installation on third party systems"
-  These bindings require instantassist and instantutils to be installed
+    These bindings require instantassist and instantutils to be installed
 
 ## instantASSIST
 
