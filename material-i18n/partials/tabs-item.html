@@ -1,4 +1,5 @@
 {% set language = page.abs_url and (page.abs_url|replace("/", "", 1)|reverse|replace("/", "", 1)|reverse).split("/")[0] or 'en' %}
+{% import "partials/nav-translations/" ~ language ~ ".html" as navLang %}
 
 {% if not class %}
   {% set class = "md-tabs__link" %}
@@ -14,14 +15,14 @@
   {% else %}
     <li class="md-tabs__item">
       <a href="/{{ language }}/{{ nav_item.url | replace('.md', '') }}" class="{{ class }}">
-        {{ title }}
+        {{ navLang.t(title) and navLang.t(title) or title }}
       </a>
     </li>
   {% endif %}
 {% else %}
   <li class="md-tabs__item">
     <a href="/{{ language }}/{{ nav_item.url | replace('.md', '') }}" class="{{ class }}">
-      {{ nav_item.title }}
+      {{ navLang.t(nav_item.title) and navLang.t(nav_item.title) or nav_item.title }}
     </a>
   </li>
 {% endif %}

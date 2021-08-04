@@ -51,11 +51,6 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
-plugins:
-  - redirects:
-        redirect_maps:
-          'index.md': '/en/index.md'
-
 nav:
   - Home: index.md
   - Basics:
