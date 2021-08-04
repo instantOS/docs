@@ -1,0 +1,5 @@
+{% set language = page.abs_url and (page.abs_url|replace("/", "", 1)|reverse|replace("/", "", 1)|reverse).split("/")[0] or 'en' %}
+
+{% import "partials/languages/" ~ language ~ ".html" as lang %}
+{% import "partials/languages/en.html" as fallback %}
+{% macro t(key) %}{{ lang.t(key) or fallback.t(key) }}{% endmacro %}

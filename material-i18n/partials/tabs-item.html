@@ -1,0 +1,28 @@
+{% set language = page.abs_url and (page.abs_url|replace("/", "", 1)|reverse|replace("/", "", 1)|reverse).split("/")[0] or 'en' %}
+{% import "partials/nav-translations/" ~ language ~ ".html" as navLang %}
+
+{% if not class %}
+  {% set class = "md-tabs__link" %}
+  {% if nav_item.active %}
+    {% set class = class ~ " md-tabs__link--active" %}
+  {% endif %}
+{% endif %}
+{% if nav_item.children %}
+  {% set title = title | d(nav_item.title) %}
+  {% set nav_item = nav_item.children | first %}
+  {% if nav_item.children %}
+    {% include "partials/tabs-item.html" %}
+  {% else %}
+    <li class="md-tabs__item">
+      <a href="/{{ language }}/{{ nav_item.url | replace('.md', '') }}" class="{{ class }}">
+        {{ navLang.t(title) and navLang.t(title) or title }}
+      </a>
+    </li>
+  {% endif %}
+{% else %}
+  <li class="md-tabs__item">
+    <a href="/{{ language }}/{{ nav_item.url | replace('.md', '') }}" class="{{ class }}">
+      {{ navLang.t(nav_item.title) and navLang.t(nav_item.title) or nav_item.title }}
+    </a>
+  </li>
+{% endif %}
