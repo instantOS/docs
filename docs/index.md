@@ -1,1 +1,6 @@
-<meta http-equiv="refresh" content="0; url=en/" />
+<script>
+    let lastLanguage = localStorage.getItem("lastLanguage") || "en";
+    window.location.href = `/${lastLanguage}`;
+</script>
+
+# instantOS

@@ -1,3 +1,6 @@
+## Tłumaczenia dla tego języka są w trakcie przygotowania...
+
+
 # Welcome to instantOS
 
 You can learn how to use instantOS by adding one feature at a time to your
