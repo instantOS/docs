@@ -79,5 +79,7 @@ nav:
       - Beginners guide: gaming/gamebegin.md
       - Guide: gaming/gaming.md
   - Development:
+      - ibuild dev tools: development/ibuild.md
       - status bar: development/status.md
       - instantMENU: development/instantMENU.md
+      - instantARCH: development/instantARCH.md

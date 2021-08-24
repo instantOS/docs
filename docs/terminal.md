@@ -50,3 +50,4 @@ much better and reliable using tmux.
 Colors can be changed from Xresources, but
 please read [this](https://instantos.io/youtube/customize) before doing any
 theming.
+
