@@ -34,3 +34,6 @@ Past search terms and matched files are saved to grant quick access to items
 that are in frequent use.  As an example, you close a file you're using either
 to save restores or by accident and need it again, you can just open
 instantSEARCH and hit enter three times to open it back up.
+
+!!! todo
+    video/gif demonstration
