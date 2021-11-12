@@ -14,4 +14,4 @@ it if you prefer that.
 - [YouTube](http://youtube.com/paperbenni)
 - [Discord](https://discord.io/instantos)
 
-## [Donate](/donate)
+## [Donate](donate.md)
