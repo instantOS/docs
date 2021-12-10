@@ -82,8 +82,8 @@ You can access this list by pressing super+F1
 | ++super+shift+print++        | Take fullscreen screenshot to clipboard           |
 | ++super+ctrl+f++             | Distribute applications between tags              |
 | ++super+ctrl+i++             | Open instantPACMAN                                |
-| ++super+shift+"Up/Down"++      | Minimize/Restore window                           |
-| ++super+ctrl+f++             | Toggle temporaly fullscreen                       |
+| ++super+shift+"Up/Down"++    | Minimize/Restore window                           |
+| ++super+ctrl+f++             | Toggle temporary fullscreen                       |
 | ++super+shift+f++            | Toggle fake fullscreen                            |
 | ++super+f2++                   | Toggle action prefix                              |
 | ++super+shift+p++            | Open external screen settings                     |
