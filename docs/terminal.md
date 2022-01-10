@@ -48,6 +48,6 @@ much better and reliable using tmux.
     - transparency
 
 Colors can be changed from Xresources, but
-please read [this](https://instantos.io/youtube/customize) before doing any
+please read [this](/customize) before doing any
 theming.
 

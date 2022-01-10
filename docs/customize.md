@@ -2,7 +2,7 @@
 
 instantOS has an "it just works" philosophy so it shouldn't be necessary to
 change large parts of it. It is recommended to learn the default
-[keybindings](https://instantos.io/youtube/hotkeys) and how to use the OS with
+[keybindings](/hotkeys) and how to use the OS with
 the default setup before changing it.
 
 ## Settings manager

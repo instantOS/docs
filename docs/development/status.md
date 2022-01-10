@@ -1,4 +1,4 @@
-# Status customisation
+# Status bar customisation
 
 ## Setting the status
 
@@ -56,16 +56,32 @@ The appearance of text in the status bar can be changed by using special markup
 syntax.  The markup parser of instantWM is based on the
 [status-2d](https://dwm.suckless.org/patches/status2d/) patch for dwm. 
 
+All Markup commands have the following format
+```txt
+^commandnamecommandargument^
+```
+
+They have a "\^" as suffix and prefix. The opening caret is immediatly followed
+by the command name which is then (without a separator) followed by the
+argument.
+
+
 ### Colors
 
 ```txt
 ^c#ff0000^ this text have a red background ^d^ this text will have the default background color
+^t#ff0000^ this text have a red foreground ^d^ this text will have the default background color
 ```
 
 ### Offsets
 
 ```txt
 ^f11^there will be an 11px gap in front of this text
+```
+### Reset
+
+```txt
+^d^text after this is reset to the default styling
 ```
 
 ## Icons
