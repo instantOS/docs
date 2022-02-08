@@ -6,7 +6,7 @@ new to Linux gaming in general, there (insert link) is this article.
 Dependencies that provide support for most games can be installed using
 
 ```sh
-yay -S wine steam lutris dxvk-bin
+yay -S wine-staging steam lutris dxvk-bin proton-ge-custom-bin heroic-games-launcher-bin
 ```
 
 ## Features useful for gaming
