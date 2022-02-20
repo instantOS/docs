@@ -399,6 +399,7 @@ offset which some games have on instantWM. Some window events on wine can cause
 windows to become immobable on desktop environments and drift downwards on
 instantWM. i3wm does not have those issues and also supports moving wine
 windows by their native titlebar. 
+i3wm also has a systray which not all desktop environments have and which can be a bit buggy with wine applications
 
 ## instantWM
 

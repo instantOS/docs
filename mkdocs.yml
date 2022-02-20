@@ -71,6 +71,7 @@ nav:
       - Visibility options: visibility.md
       - Customizing: customize.md
       - WM configuration: wmsettings.md
+      - Terminal theming: terminaltheme.md
       - Menu configuration: menusettings.md
       - Terminal: terminal.md
   - Noob guides:
