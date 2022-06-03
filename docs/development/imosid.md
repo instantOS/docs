@@ -2,12 +2,16 @@
 
 imosid stands for "instant manager of sections in dotfiles". 
 
-It aims to be an unobtrusive dotfile manager used by linux distributions or
-automated config systems that does not interfere with user customisation. It
-allows applying updates to dotfiles while detecting parts modified by users in
-order to not overwrite them. 
+It aims to solve a core problem when working with dotfiles:
 
+If the distro developer changes a default setting, the user should get the new
+default with an update. If the user has changed the default, the changed
+version should not be overridden. 
 
+A side effect of imosid's core functionality is that it reimplements much of
+what stow does and can be considered a (**non drop-in!!!**) replacement. 
+
+Imosid allows for automated config systems that do not interfere with user customisation. 
 
 ## General information
 

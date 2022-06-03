@@ -3,14 +3,14 @@
 instantARCH is the custom made installer being used for instantOS. It is a
 netinstall based around instantmenu and written in bash.
 
-## Testing the installation
+## Use testing branch
 
 ```sh
 ibuild instantarchtest [branchname]
 ```
 
-This starts up instantarch using a branch other than master and opens up a
-debug menu when the installer is tarted
+This lets you select the branch you want to run and opens up a
+debug menu when the installer is started
 
 ## Debugging mode
 
