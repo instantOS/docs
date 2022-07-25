@@ -44,15 +44,79 @@ you can list all available themes with
 instantthemes list
 ```
 
+
 ## Dark/Light mode
 
 ## Creating themes
 
 TODO
 
+## Advanced command-line usage
+
+### Querying
+
+```
+instantthemes query query_expression
+```
+
+This executes a dasel query on the current theme and puts the results in
+stdout. you can read more about dasel at
+https://daseldocs.tomwright.me/selectors/introduction. The dasel query
+expression is optional. If no expression is passed, the whole theme config file
+is output instead. 
+
+Example:
 
 
+```
+~  instantthemes query
+defaultvariant = "light"
+dependencies = ["materia-gtk-theme", "papirus-icon-theme", "instantcursors", "inter-font"]
+name = "instantOS"
+version = 0
 
+[colors]
+  accent = "#88B2F6"
+  background = "#121212"
 
+[cursor]
+  size = 16
+  theme = "elementary-instantos"
+
+[font]
+  name = "Inter"
+  size = 12
+
+[gtk]
+
+  [gtk.dark]
+    theme = "Materia-dark"
+
+  [gtk.light]
+    theme = "Materia"
+
+[icons]
+  dark = "Papirus-Dark"
+  light = "Papirus"
+
+[qt]
+
+  [qt.dark]
+    kvantum = "Materia"
+    theme = "kvanum-dark"
+
+  [qt.light]
+    theme = "kvantum"
+~ 
+```
+
+And example query executed on the same theme
+
+```
+~  instantthemes query qt.dark
+kvantum = "Materia"
+theme = "kvanum-dark"
+~ 
+```
 
 

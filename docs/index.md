@@ -14,4 +14,5 @@ it if you prefer that.
 - [YouTube](http://youtube.com/paperbenni)
 - [Discord](https://discord.io/instantos)
 - [Donate](donate.md)
+- [Documentation source code](https://github.com/instantOS/docs)
 
