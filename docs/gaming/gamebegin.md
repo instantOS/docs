@@ -26,35 +26,36 @@ Here is a basic overview of the ways to play games on linux
       package manager and can be launched from the super + y menu. This is the
       most convenient and reliable method of aquiring games. They are almost
       guaranteed to work and are automatically kept up to date when the system
-      updates. However the number of games that can be played this way is very small
+      updates. However the number of games that can be installed this way is very small
     - Flatpak/AppImage/Snap games are installed from alternative package
       managers. They are sandboxed which means that they work on all distros
-      and have excellent backwards compatibility meaning that even very old
+      and have excellent backwards compatibility. Even very old
       games should work on a modern os with modern hardware. The tradeoff is
       that these require more storage and ram than the other methods. 
     - Manually downloaded games: This is the method of aquiring software that
       will be most familiar to windows users. Download a program from the web
-      to your harddrive and run it. This is however not recommended on Linux as
+      and run it. This is however not recommended on Linux as
       the game might require other things to be installed on your system and
-      will not automatically install them. If you run into this problem then
+      will not automatically install them. If you run into this problem,
       try running the game from a terminal and check if there are error
-      messages hinting what the game requires.
-    - Steam: Steam is a very popular game store and has a native linux version.
+      messages hinting at what the game requires to be installed.
+    - Steam: Steam is a very popular game store that has a native linux version.
       After installing steam from the package manager the experience of using
       it is identical to windows when it comes to games which have a native
       linux version. 
 2. Windows games
-    - Wine: wine is a program that allows windows programs to run on Linux. You
+    - Wine:  
+      Wine is a program that allows windows programs to run on Linux. You
       point it at a .exe file and it will try to run it. Using wine directly
       can be a bit tricky. Not all programs will work with just the stock
       installation of wine. Lots of games require additional windows software
       to be installed. This can be done with a program called winetricks. There
-      are also noumerous programs that extend the functionality of wine. dxvk
+      are also numerous programs that extend the functionality of wine. dxvk
       allows using directx in wine, nvapi adds support for dlss and raytracing.
       It can be helpful to have an understanding of the workings of these
       individual programs but in most cases the methods below are more
       convenient. 
-    - Steam Play:
+    - Steam Play:  
       Steam has the ability to run windows games with a feature called
       Steam-Play. Steam-Play makes use of a program called proton. Proton is a
       collection of programs like wine and dxvk along with scripts and tweaks
@@ -62,7 +63,8 @@ Here is a basic overview of the ways to play games on linux
       additional windows programs that the game might need, meaning you don't
       have to make use of winetricks and don't have to manually set up dxvk or
       change any wine settings. 
-    - Lutris: Lutris is a game launcher that can launch all game types here
+    - Lutris:  
+      Lutris is a game launcher that can launch all game types here
       including windows games. It runs windows games using wine and functions
       as an alternative to proton. Just like proton it also sets up wine, dxvk
       and nvapi automatically. It also has a database of games along with user
@@ -70,13 +72,15 @@ Here is a basic overview of the ways to play games on linux
       your wine installation than proton. It has a user friendly graphical
       interface for changing wine settings and with enough tinkering allows
       getting almost any game to work 
-    - Legendary/Heroic: Heroic is an open source alternative to the epic games
+    - Legendary/Heroic:
+      Heroic is an open source alternative to the epic games
       launcher. It can download and play games from the epic game store. It
       makes use of the command line tool legendary to communicate with the epic
       games servers. Similarly to lutris it allows configuring wine for
       specific games. It also has support for running games with proton which
       in most cases yields better results. 
-    - Bottles/PlayOnLinux
+    - Bottles/PlayOnLinux:
+      PlayOnLinux is a program very similar to lutris, but contrary to what the name may suggest is focussed on running non-gaming software. It probably has its uses but from my testing you have to invest a lot more time into it to get a result that is compa
       PlayOnLinux almost never works
       Better for non-gaming software
     
@@ -415,4 +419,46 @@ many windows games.
 
 
 
+// In progress
 
+## Testing different window managers/desktops with games
+
+- awesome
+Prey
+
+Fullscreen problems
+- Not in fullscreen, immovable window
+- Squished aspect ratio
+- Offset mouse input
+- FSR not working
+
+i3wm
+- Pros
+    - No black screen when switching away from fullscreen games
+    - Mouse input always works
+- Problems
+    - Moving fullscreen games between monitors breaks FSR and mouse input
+
+- Mate
+    - Fullscreen doesn't fill whole screen
+    - Game freezes when switching to borderless windowed
+    - Cursor gets stuck on frozen game
+- Cinnamon
+    - Fullscreen doesnt fill entire window
+    - Black screen after alttab, no way of restoring with minimizing through taskbar
+    
+- Gnome
+    - Fullscreen doesnt fill screen
+    - Black screen after switching away more than 3 times
+    - Possible to get mouse stuck 
+        - Get out by alttabbing, quitting using keyboard
+          
+- LXQT
+    - Minimizing works
+    - FSR doesnt cover full screen
+    - Switching to windowed works
+    - Mouse input works
+    - Switching to tty and back freezes entire desktop
+Problem of fullscreen not covering entire screen now everywhere, I broke something...
+
+Fix for fullscreen: start game on desired monitor with borderless windowed, switch to fullscreen
