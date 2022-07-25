@@ -82,6 +82,7 @@ nav:
       - Guide: gaming/gaming.md
   - Development:
       - ibuild dev tools: development/ibuild.md
+      - instantTHEMES: instantthemes.md
       - status bar: development/status.md
       - instantMENU: development/instantMENU.md
       - instantARCH: development/instantARCH.md
