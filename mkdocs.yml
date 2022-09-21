@@ -86,3 +86,4 @@ nav:
       - status bar: development/status.md
       - instantMENU: development/instantMENU.md
       - instantARCH: development/instantARCH.md
+      - instantCONF: development/iconf.md
