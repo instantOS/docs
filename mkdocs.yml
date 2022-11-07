@@ -38,7 +38,7 @@ extra:
       link: https://discord.io/instantOS
     - icon: fontawesome/brands/gitter
       link: https://gitter.im/instantOS/community?source=orgpage
-    - icon: fontawesome/icons/comment-dots
+    - icon: fontawesome/solid/message
       link: https://matrix.to/#/!smJyjPsHsYizSKvvaE:matrix.org?via=matrix.org
 
 extra_css:
