@@ -12,7 +12,7 @@ it if you prefer that.
 - [Keybindings](hotkeys.md)
 - [instantOS Website](http://instantos.io)
 - [YouTube](http://youtube.com/paperbenni)
-- [Discord](https://discord.io/instantos)
+- [Discord](https://dsc.gg/instantos)
 - [Donate](donate.md)
 - [Documentation source code](https://github.com/instantOS/docs)
 

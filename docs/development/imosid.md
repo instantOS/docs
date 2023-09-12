@@ -97,6 +97,8 @@ comments metadata, imosid records information about them in a separate
 functionality without comments but does not allow for multiple sections in one
 file.
 
+//TODO: document how metafiles work
+
 ## Commands
 
 ### update
@@ -111,6 +113,7 @@ imosid update targetfile
 Example
 
 hello.txt
+
 ```txt
 #...sectionname2 begin
 #...sectionname2 hash asduvhnw42377
@@ -135,6 +138,8 @@ imosid apply sourcefile
 
 - requires target comment
 - applies all sections present in all files
+
+Example
 
 ### Compile
 
