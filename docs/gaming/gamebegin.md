@@ -411,7 +411,7 @@ i3wm also has a systray which not all desktop environments have and which can be
 
 After losing focus some wine windows can go
 completaly black and freeze. This issue is resolved by minimizing the window
-with super+ctrl+h and restoring it with super+ctrl+down. Some window managers,
+with super+ctrl+h or super+shift+up and restoring it with super+shift+down. Some window managers,
 including dwm lack the ability to minimize windows which makes them unfit for
 many windows games. 
 
