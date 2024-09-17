@@ -92,6 +92,16 @@ The iconset in use is [Nerd Fonts](https://www.nerdfonts.com/), a collection of
 icons that includes the [Font Awesome](https://fontawesome.com/) icon set and
 can be [searched through](https://www.nerdfonts.com/cheat-sheet)
 
+## Grid syntax
+
+```sh
+seq 20 | instantmenu -g 4 -l 5
+```
+
+gives a grid of 5x5 entries. The grid is filled from left to right and top to bottom with the individual lines from stdin. 
+
+![grid screenshot](https://i.imgur.com/oTTTN8e.png)
+
 ## [imenu](https://github.com/instantOS/imenu)
 
 Imenu is a wrapper around instantmenu that allows fast creation of common types of user interfaces using instantMENU.
