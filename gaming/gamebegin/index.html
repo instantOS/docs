@@ -1,0 +1,2731 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../installguide/">
+      
+      
+        <link rel="next" href="../gaming/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Beginners guide - instantOS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started-with-gaming-on-linux-and-gaming-on-instantos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="instantOS" class="md-header__button md-logo" aria-label="instantOS" data-md-component="logo">
+      
+  <img src="../../assets/instantos.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            instantOS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Beginners guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hotkeys/" class="md-tabs__link">
+          
+  
+  Basics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../filesearch/" class="md-tabs__link">
+          
+  
+  Extra features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../instantassist/" class="md-tabs__link">
+          
+  
+  Power-User Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../vim/" class="md-tabs__link">
+          
+  
+  Noob guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Gaming (WIP)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../development/ibuild/" class="md-tabs__link">
+          
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="instantOS" class="md-nav__button md-logo" aria-label="instantOS" data-md-component="logo">
+      
+  <img src="../../assets/instantos.png" alt="logo">
+
+    </a>
+    instantOS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hotkeys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Keybindings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open applications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../close/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Close applications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shutdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shut down
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shortcuts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shortcuts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layouts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../screenshots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Screenshots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../update/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fullscreen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fullscreen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Extra features
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Extra features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filesearch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File search
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overlays/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overlays
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scratchpad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scratchpad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alttab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alt-tab
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sticky/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sticky windows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../drawing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Window drawing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notification center
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Power-User Features
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Power-User Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../instantassist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    instantASSIST
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickmenu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickmenu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visibility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visibility options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customizing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wmsettings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WM configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terminaltheme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terminal theming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../menusettings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menu configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terminal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terminal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Noob guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Noob guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vim bindings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installguide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Gaming (WIP)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Gaming (WIP)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Beginners guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Beginners guide
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#native" class="md-nav__link">
+    <span class="md-ellipsis">
+      Native
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prefixes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steam-play" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steam Play
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steam Play">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verified-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verified titles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unverified-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unverified titles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unverified titles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#titles-not-on-steam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Titles not on steam
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-is-the-wine-prefix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where is the wine prefix?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proton
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protonup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protonup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gloriouseggroll" class="md-nav__link">
+    <span class="md-ellipsis">
+      GloriousEggroll
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Emulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dolphin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dolphin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retroarch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retroarch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retroarch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-core-updater" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Core-Updater
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-icons-and-fonts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing icons and fonts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cemu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cemu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cemu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#info" class="md-nav__link">
+    <span class="md-ellipsis">
+      Info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caveats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caveats
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caveats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#poor-performance-on-older-kernels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poor performance on older kernels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dualsense-controller-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dualsense Controller Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#info_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Info
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Info">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#which-desktop-environmentwindow-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which Desktop environment/Window manager
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#but-window-managers-are-hard" class="md-nav__link">
+    <span class="md-ellipsis">
+      But window managers are hard...
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i3" class="md-nav__link">
+    <span class="md-ellipsis">
+      i3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instantwm" class="md-nav__link">
+    <span class="md-ellipsis">
+      instantWM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-different-window-managersdesktops-with-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing different window managers/desktops with games
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/ibuild/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ibuild dev tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../instantthemes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    instantTHEMES
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    status bar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/instantMENU/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    instantMENU
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/instantARCH/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    instantARCH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/iconf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    instantCONF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#native" class="md-nav__link">
+    <span class="md-ellipsis">
+      Native
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prefixes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steam-play" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steam Play
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steam Play">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verified-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verified titles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unverified-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unverified titles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unverified titles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#titles-not-on-steam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Titles not on steam
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-is-the-wine-prefix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where is the wine prefix?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proton
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protonup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protonup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gloriouseggroll" class="md-nav__link">
+    <span class="md-ellipsis">
+      GloriousEggroll
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Emulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dolphin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dolphin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retroarch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retroarch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retroarch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-core-updater" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Core-Updater
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-icons-and-fonts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing icons and fonts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cemu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cemu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cemu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#info" class="md-nav__link">
+    <span class="md-ellipsis">
+      Info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caveats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caveats
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caveats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#poor-performance-on-older-kernels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poor performance on older kernels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dualsense-controller-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dualsense Controller Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#info_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Info
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Info">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#which-desktop-environmentwindow-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which Desktop environment/Window manager
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#but-window-managers-are-hard" class="md-nav__link">
+    <span class="md-ellipsis">
+      But window managers are hard...
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i3" class="md-nav__link">
+    <span class="md-ellipsis">
+      i3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instantwm" class="md-nav__link">
+    <span class="md-ellipsis">
+      instantWM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-different-window-managersdesktops-with-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing different window managers/desktops with games
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="getting-started-with-gaming-on-linux-and-gaming-on-instantos">Getting started with gaming on Linux and gaming on instantOS<a class="headerlink" href="#getting-started-with-gaming-on-linux-and-gaming-on-instantos" title="Permanent link">&para;</a></h1>
+<p>This article is meant to get you started with gaming on Linux as a new user
+coming from Windows or Consoles. It aims to build an understanding of Linux
+Gaming from the ground up and avoid what I call "ecosystem confusion". </p>
+<p>You can get surprisingly deep into a piece of documentation without an overview
+of what anything actually does and how it relates to everything else. This
+guide will build up an understanding of linux gaming and hopefully equip you
+with the tools to troubleshoot (or avoid) your own problems. </p>
+<p>It will also go much more in depth than most tutorials and include many tips to
+make and keep gaming on linux more convenient. It contains lots of information
+that is for some reason really hard to google for that will still benefit 99%
+of linux gamers. Just as an example: "How do I find the savegames for my steam
+games" sounds like it should be simple to google for, yet it is not and I have
+not yet found anyone publicly mentioning the method described in this guide. </p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Here is a basic overview of the ways to play games on linux</p>
+<ol>
+<li>Native games<ul>
+<li>Games from the official repositories: These can be installed using your
+  package manager and can be launched from the super + y menu. This is the
+  most convenient and reliable method of aquiring games. They are almost
+  guaranteed to work and are automatically kept up to date when the system
+  updates. However the number of games that can be installed this way is very small</li>
+<li>Flatpak/AppImage/Snap games are installed from alternative package
+  managers. They are sandboxed which means that they work on all distros
+  and have excellent backwards compatibility. Even very old
+  games should work on a modern os with modern hardware. The tradeoff is
+  that these require more storage and ram than the other methods. </li>
+<li>Manually downloaded games: This is the method of aquiring software that
+  will be most familiar to windows users. Download a program from the web
+  and run it. This is however not recommended on Linux as
+  the game might require other things to be installed on your system and
+  will not automatically install them. If you run into this problem,
+  try running the game from a terminal and check if there are error
+  messages hinting at what the game requires to be installed.</li>
+<li>Steam: Steam is a very popular game store that has a native linux version.
+  After installing steam from the package manager the experience of using
+  it is identical to windows when it comes to games which have a native
+  linux version. </li>
+</ul>
+</li>
+<li>
+<p>Windows games</p>
+<ul>
+<li>Wine:<br />
+  Wine is a program that allows windows programs to run on Linux. You
+  point it at a .exe file and it will try to run it. Using wine directly
+  can be a bit tricky. Not all programs will work with just the stock
+  installation of wine. Lots of games require additional windows software
+  to be installed. This can be done with a program called winetricks. There
+  are also numerous programs that extend the functionality of wine. dxvk
+  allows using directx in wine, nvapi adds support for dlss and raytracing.
+  It can be helpful to have an understanding of the workings of these
+  individual programs but in most cases the methods below are more
+  convenient. </li>
+<li>Steam Play:<br />
+  Steam has the ability to run windows games with a feature called
+  Steam-Play. Steam-Play makes use of a program called proton. Proton is a
+  collection of programs like wine and dxvk along with scripts and tweaks
+  that make them work together. Steam play also automatically installs any
+  additional windows programs that the game might need, meaning you don't
+  have to make use of winetricks and don't have to manually set up dxvk or
+  change any wine settings. </li>
+<li>Lutris:<br />
+  Lutris is a game launcher that can launch all game types here
+  including windows games. It runs windows games using wine and functions
+  as an alternative to proton. Just like proton it also sets up wine, dxvk
+  and nvapi automatically. It also has a database of games along with user
+  submitted installers for them. Lutris allows for much more control over
+  your wine installation than proton. It has a user friendly graphical
+  interface for changing wine settings and with enough tinkering allows
+  getting almost any game to work </li>
+<li>Legendary/Heroic:
+  Heroic is an open source alternative to the epic games
+  launcher. It can download and play games from the epic game store. It
+  makes use of the command line tool legendary to communicate with the epic
+  games servers. Similarly to lutris it allows configuring wine for
+  specific games. It also has support for running games with proton which
+  in most cases yields better results. </li>
+<li>Bottles/PlayOnLinux:
+  PlayOnLinux is a program very similar to lutris, but contrary to what the name may suggest is focussed on running non-gaming software. It probably has its uses but from my testing you have to invest a lot more time into it to get a result that is compa
+  PlayOnLinux almost never works
+  Better for non-gaming software</li>
+</ul>
+</li>
+<li>
+<p>Using the official repositories. There are some games that are completely
+   free and open source. These are available in the default repositories (aka App
+   store). But because most games are commercial products, this leaves you with a
+   very small library of titles that are often just tech demos for game engines
+   that have not aged well...</p>
+</li>
+<li>Steam native: Steam is a digital games store that has excellent support for
+   Linux. It has hundreds of thousands of high quality games, many of which run
+   on Linux.</li>
+<li>Steam Play: Linux has the ability to run Windows games using a tool called
+   proton. It is developed by Valve and is to wine what Linux Distributions are
+   to the Linux kernel. The steam client has a feature called steam play that
+   allows downloading windows games from steam and playing them using proton.
+   By default, steam play is only enabled for titles that are guaranteed to
+   work, but you can enable it for all games in the settings. Many games are
+   only unofficially supported but run just fine using proton. Protondb is a
+   website that lists games and how well they run using proton.</li>
+<li>Lutris: Lutris is a game launcher with a corresponding website which
+   contains thousands of community made installers. It allows playing native
+   games, can be used as a launcher for steam games and games running in an
+   emulator and most interestingly, comes with its own wine versions.</li>
+<li>
+<p>Legendary/Heroic: Heroic is an open source reimplementation of the epic
+   games launcher. It allows you to download games from the epic game store and
+   play them using wine or proton. It utilizes the command line program
+   legendary to handle communication with the epic games servers. It is also
+   possible to use legendary directly without going through the heroic launcher</p>
+</li>
+<li>
+<p>setup guide</p>
+</li>
+<li>compare different methods</li>
+</ol>
+<h2 id="native">Native<a class="headerlink" href="#native" title="Permanent link">&para;</a></h2>
+<p>//TODO</p>
+<h2 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
+<h3 id="overview_1">Overview<a class="headerlink" href="#overview_1" title="Permanent link">&para;</a></h3>
+<h4 id="wine">Wine<a class="headerlink" href="#wine" title="Permanent link">&para;</a></h4>
+<h5 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link">&para;</a></h5>
+<p>Wine is a program that allows using windows programs on linux. It is different
+from an emulator because it runs on bare metal and achieves near native
+performance, sometimes even surpassing windows. </p>
+<p>In basic terms, programs can defer some tasks to the operating system so that
+the developer doesn't need to worry about them too much. This includes things
+like sound, windowing and basic GUI elements. The problem is that the
+instructions that programs can send to windows are different than those that
+linux accepts. The job of wine is to catch these instructions and translate
+them into their linux equivalent. </p>
+<h5 id="prefixes">Prefixes<a class="headerlink" href="#prefixes" title="Permanent link">&para;</a></h5>
+<p>One difference between Windows and Linux is that Linux does not have a C-drive
+and the folder structure is different. Wine solves this problem through a
+feature called prefixes. A wine-prefix is a folder on your harddrive that wine
+uses as a virtual C drive. Everything that a program would write to the c drive
+if it were running on windows gets written to the prefix folder instead. This
+opens up interesting possibilities as each prefix acts as a separate
+installation of windows. In contrast to a real windows installation however a
+wine prefix is only in the hundreds of megabytes and can be created and deleted
+quickly and cheaply. </p>
+<h5 id="versions">Versions<a class="headerlink" href="#versions" title="Permanent link">&para;</a></h5>
+<p>The two main versions of wine are stable and staging. Stable is the standard
+version which is missing the latest features but the features that are there
+can generally be relied upon. Staging is a version ahead of the stable version
+and contains unstable versions of features that will eventually end up in
+stable. Proton, which will be covered later also contains a version of wine
+with some custom patches. </p>
+<h4 id="steam-play">Steam Play<a class="headerlink" href="#steam-play" title="Permanent link">&para;</a></h4>
+<p>Steam Play is a feature included in the steam client for linux that allows
+playing windows games on linux through a program called proton. SteamPlay
+automatically installs any windows programs a game might need meaning you do
+not have to mess with winetricks to get a game working. </p>
+<h5 id="verified-titles">Verified titles<a class="headerlink" href="#verified-titles" title="Permanent link">&para;</a></h5>
+<p>Titles verified to be working with SteamPlay are listed on the steam store and
+can be launched from the library as if they were native. Any hacks and extra
+steps will automatically be applied. </p>
+<h5 id="unverified-titles">Unverified titles<a class="headerlink" href="#unverified-titles" title="Permanent link">&para;</a></h5>
+<p>It is possible to use SteamPlay with any steam game regardless of wether it has
+been verified by valve. This can yield mixed results but in most cases proton
+is mature enough to at least get you a playable experience. To use this, go to
+settings-&gt;steam Play-&gt;Enable steam play for all other titles. Also make sure
+that the proton version beneath that checkmark is set to the latest one
+available</p>
+<h6 id="titles-not-on-steam">Titles not on steam<a class="headerlink" href="#titles-not-on-steam" title="Permanent link">&para;</a></h6>
+<p>It is possible to play games not aquired from steam and even other game stores
+like ubisoft connect through proton inside the steam client. Steam has a built
+in menu to add non-steam games to the library. However the GUI for this is
+buggy and confusing and should best be avoided. </p>
+<p>//TODO describe steam UI issues</p>
+<p>Instead there is a tool called steamtinkerlaunch. Install it using <code>yay -S
+steamtinkerlaunch</code> and then run <code>steamtinkerlaunch addnonsteamgame</code> in a
+terminal. This opens up a dialog. Set the game name, set Exe to the location of
+the .exe file of the game and click create. Start steam-runtime and the game
+should be in your library. Finally, right click on the game, go to
+compatibility and check "force the use of a specific Steam Play compatibility
+tool". Select A proton version as the compatibility tool, in most cases proton
+experimental or proton-ge works best. After that the game should be playable on
+steam. </p>
+<h6 id="where-is-the-wine-prefix">Where is the wine prefix?<a class="headerlink" href="#where-is-the-wine-prefix" title="Permanent link">&para;</a></h6>
+<p>You might notice that proton does not use ~/.wine as a wine prefix </p>
+<p>//TODO link to explanation of wine prefix</p>
+<p>proton creates a separate wine prefix for each game, located in
+~/.local/share/Steam/steamapps/compatdata/gameid</p>
+<p>Unfortunately all games just have meaningless id numbers as folder names making
+it quite hard for beginners to figure out which folder contains the data for
+which game. The steam client does not have any features to get the ID for a
+game and especially for non-steam games the IDs cannot even be googled for as
+they are unique to your installation. </p>
+<p>The solution is a tool called protontricks. It can be installed from the AUR
+and running it from a terminal brings up a window which lists all games along
+with their name, icon and ID. inside the id folder there is a folder called pfx
+which is a normal wine prefix and contains the savegame at the same path where
+it would be on windows. You can also add the pfx folder as a wine prefix to
+ludusavi to keep track of your save files. </p>
+<h4 id="proton">Proton<a class="headerlink" href="#proton" title="Permanent link">&para;</a></h4>
+<p>Proton is a collection of programs and scripts developed by valve that work
+together to make windows games run on Linux. It includes wine, dxvk openxr and
+many more. While the versions of programs included in proton might have a few
+patches applied to them it is important to mention that proton is not a fork of
+wine. Valve made proton work so well by contributing improvements to wine and
+dxvk which in turn benefit all projects making use of them, not just proton. </p>
+<p>//TODO more stuff</p>
+<p>Proton is not meant to be used outside of SteamPlay. Apart from steam and
+heroic there aren't any well maintained wrappers for proton. Using it manually
+is a chore and whenever you do anything wrong it hard crashes. Manually using
+proton requires knowledge of the source code and it requires less time and
+effort to use wine through lutris. </p>
+<h4 id="protonup">Protonup<a class="headerlink" href="#protonup" title="Permanent link">&para;</a></h4>
+<p>protonup is a simple program used to manage and update your wine and proton
+installations in steam, lutris and heroic. </p>
+<h4 id="gloriouseggroll">GloriousEggroll<a class="headerlink" href="#gloriouseggroll" title="Permanent link">&para;</a></h4>
+<p>Thomas Crider, also known as GloriousEggroll is a RedHat Engineer who maintains
+a fork of wine and a fork of proton based around that fork of wine. These
+versions are more up to date than their lutris and valve counterparts and
+contain game specific fixes and optimisations. They also have support for AMD
+FSR which allows running any game at a lower resolution and then upscaling it
+to the native monitor resolution. This allows for more performance while only
+losing a small amount of detail. </p>
+<p>//TODO</p>
+<p>Bulletpoints
+- windowing
+    - fullscreen wine
+        - minimize fixes it
+        - i3 auto fixes it
+    - virtual desktop
+- versions
+    - stable
+    - staging
+    - ge
+    - proton
+    - proton-ge</p>
+<h2 id="emulation">Emulation<a class="headerlink" href="#emulation" title="Permanent link">&para;</a></h2>
+<p>Console emulators allow you to play console games on your PC. This practice
+isn't unique to Linux. There are emulators available for linux, windows, macos,
+android and even for newer consoles. There are lots of resources on emulation
+in general so this wiki will only cover linux specific things to keep in mind
+when doing emulation on Linux.</p>
+<h3 id="dolphin">Dolphin<a class="headerlink" href="#dolphin" title="Permanent link">&para;</a></h3>
+<p>Dolphin is a Wii and GameCube emulator. It is one of the most polished and
+maintained emulators available and the native linux version runs great. </p>
+<h3 id="retroarch">Retroarch<a class="headerlink" href="#retroarch" title="Permanent link">&para;</a></h3>
+<p>Retroarch is a multi-system emulator. It can emulate a wide range of different
+consoles through a single application. It is available for tons of different
+platforms and works basically the same everywhere. Yet, there are a few mention
+worthy differences to the linux version.</p>
+<h4 id="no-core-updater">No Core-Updater<a class="headerlink" href="#no-core-updater" title="Permanent link">&para;</a></h4>
+<p>The windows and android version of Retroarch have a Menu entry that allows
+downloading new cores (Cores are basically the runtimes for consoles). This
+option is not present on Linux which can frequently trip up new users.
+Installing new cores is done through the package manager. Cores typically have
+the name libretro-corename. </p>
+<h4 id="missing-icons-and-fonts">Missing icons and fonts<a class="headerlink" href="#missing-icons-and-fonts" title="Permanent link">&para;</a></h4>
+<p>Your installation of retroarch might also have a bunch of missing icons and
+fonts. This is because retroarch offers multiple different graphical user
+interfaces and installing all of them even though only one of them will end up
+being used is a waste of storage. Just like the cores these cannot be aquired
+through a menu inside of retroarch and instead are also present in distro
+packages. To install the missing parts of the default user interface install
+<code>retroarch-assets-ozone</code></p>
+<h3 id="cemu">Cemu<a class="headerlink" href="#cemu" title="Permanent link">&para;</a></h3>
+<p>Cemu is a Wii U emulator. At the time of writing it is only available for
+Windows. However, it runs nearly perfect using Wine. </p>
+<h4 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h4>
+<p>//TODO</p>
+<h4 id="info">Info<a class="headerlink" href="#info" title="Permanent link">&para;</a></h4>
+<p>Cemuhook works perfectly as of wine 7.1</p>
+<p>Using a smartphone as a motion sensor works like on Windows</p>
+<p>Cemu has native vulkan support that works great through wine. OpenGL performs
+worse and less reliable. Make sure that Graphics API is set to Vulkan in
+options-&gt;general settings-&gt;Graphics</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The Cemu team has published plans to make Cemu open-source and to create a
+Linux Port. This page was written in February 2022 and might be outdated
+once the Cemu team (hopefully) follows through on their plans</p>
+</div>
+<h4 id="caveats">Caveats<a class="headerlink" href="#caveats" title="Permanent link">&para;</a></h4>
+<h5 id="poor-performance-on-older-kernels">Poor performance on older kernels<a class="headerlink" href="#poor-performance-on-older-kernels" title="Permanent link">&para;</a></h5>
+<p>From around 2020 to the beginning of 2021 Cemu had massive performance issues
+on Linux. I have not tested if the issue was eventually fixed by a driver,
+wine, kernel or cemu update. If you are experiencing poor performance with Cemu
+on Linux, try using an arch based distro or Ubuntu Release newer than 20.04. </p>
+<h5 id="dualsense-controller-support">Dualsense Controller Support<a class="headerlink" href="#dualsense-controller-support" title="Permanent link">&para;</a></h5>
+<p>The PS5 Dualsense controller does not work out of the box and requires extra
+setup. It gets detected as a valid sdl controller but does not have correct
+input mapping. This issue can be fixed by using ds360
+//TODO add link</p>
+<h2 id="info_1">Info<a class="headerlink" href="#info_1" title="Permanent link">&para;</a></h2>
+<h3 id="which-desktop-environmentwindow-manager">Which Desktop environment/Window manager<a class="headerlink" href="#which-desktop-environmentwindow-manager" title="Permanent link">&para;</a></h3>
+<p>Desktop environments are usually not a good choice for gaming because they have
+higher latency than window managers and often have mouse accelleration enabled.
+Games windows often behave in strange ways that desktop environments are often
+not tested for. Examples of odd behaviour games might show on desktop
+environments but not on most window managers include:
+- Fullscreen windows appearing on the wrong monitor and not being able to move them
+- Fps games being unable to trap the mouse cursor. This causes it to leave the
+  game window when doing a big enough turn which then means left clicking makes
+  the game lose focus and you need to refocus it to regain control
+- Fps games trapping the mouse on the wrong monitor. This causes the game to
+  lose focus everytime you left click as you are unable to move the cursor onto
+  the game window
+- Forced compositing which can cause frameskips and sometimes forces vsync
+- Mouse inputs on fullscreen being offset or not registered at all
+- Some windows are immovable</p>
+<p>The two best environments for running games are from my testing i3 and instantwm</p>
+<h3 id="but-window-managers-are-hard">But window managers are hard...<a class="headerlink" href="#but-window-managers-are-hard" title="Permanent link">&para;</a></h3>
+<p>Games represent a unique use case for window managers because they only require
+really basic knowledge of a window manager to play games on it and because you
+are spending all your time in a single window you can even be really slow at
+using them and it doesn't matter because you will only need to use them to open
+and close the game. In the case of instantWM you do not even lose most of the
+perks afforded by a desktop environment.</p>
+<h3 id="i3">i3<a class="headerlink" href="#i3" title="Permanent link">&para;</a></h3>
+<p>I will concede the position of best window manager for gaming to i3wm. Despite
+my best efforts, it is better than instantwm if all you are doing is playing a
+game. Just like instantwm it has the ability to move fullscreen windows between
+monitors and workspaces and can force arbitrary window sizes on games. Its
+latency is comparable to that of instantWM</p>
+<p>It does however include a few features that make its game compatibility outgrow
+that of instantWM. i3wm includes an automatic workaround for wine windows going
+black after losing focus. It does not have problems with mouse inputs being
+offset which some games have on instantWM. Some window events on wine can cause
+windows to become immobable on desktop environments and drift downwards on
+instantWM. i3wm does not have those issues and also supports moving wine
+windows by their native titlebar. 
+i3wm also has a systray which not all desktop environments have and which can be a bit buggy with wine applications</p>
+<h2 id="instantwm">instantWM<a class="headerlink" href="#instantwm" title="Permanent link">&para;</a></h2>
+<p>//TODO proper shortcut markup</p>
+<p>After losing focus some wine windows can go
+completaly black and freeze. This issue is resolved by minimizing the window
+with super+ctrl+h or super+shift+up and restoring it with super+shift+down. Some window managers,
+including dwm lack the ability to minimize windows which makes them unfit for
+many windows games. </p>
+<p>//TODO fakefullscreen</p>
+<p>// In progress</p>
+<h2 id="testing-different-window-managersdesktops-with-games">Testing different window managers/desktops with games<a class="headerlink" href="#testing-different-window-managersdesktops-with-games" title="Permanent link">&para;</a></h2>
+<ul>
+<li>awesome
+Prey</li>
+</ul>
+<p>Fullscreen problems
+- Not in fullscreen, immovable window
+- Squished aspect ratio
+- Offset mouse input
+- FSR not working</p>
+<p>i3wm
+- Pros
+    - No black screen when switching away from fullscreen games
+    - Mouse input always works
+- Problems
+    - Moving fullscreen games between monitors breaks FSR and mouse input</p>
+<ul>
+<li>Mate<ul>
+<li>Fullscreen doesn't fill whole screen</li>
+<li>Game freezes when switching to borderless windowed</li>
+<li>Cursor gets stuck on frozen game</li>
+</ul>
+</li>
+<li>
+<p>Cinnamon</p>
+<ul>
+<li>Fullscreen doesnt fill entire window</li>
+<li>Black screen after alttab, no way of restoring with minimizing through taskbar</li>
+</ul>
+</li>
+<li>
+<p>Gnome</p>
+<ul>
+<li>Fullscreen doesnt fill screen</li>
+<li>Black screen after switching away more than 3 times</li>
+<li>Possible to get mouse stuck <ul>
+<li>Get out by alttabbing, quitting using keyboard</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>LXQT</p>
+<ul>
+<li>Minimizing works</li>
+<li>FSR doesnt cover full screen</li>
+<li>Switching to windowed works</li>
+<li>Mouse input works</li>
+<li>Switching to tty and back freezes entire desktop
+Problem of fullscreen not covering entire screen now everywhere, I broke something...</li>
+</ul>
+</li>
+</ul>
+<p>Fix for fullscreen: start game on desired monitor with borderless windowed, switch to fullscreen</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://youtube.com/paperbenni" target="_blank" rel="noopener" title="youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/instantOS" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://dsc.gg/instantos" target="_blank" rel="noopener" title="dsc.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://gitter.im/instantOS/community?source=orgpage" target="_blank" rel="noopener" title="gitter.im" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M66.4 322.5H16V0h50.4zM166.9 76.1h-50.4V512h50.4zm100.6 0h-50.4V512h50.4zM368 76h-50.4v247H368z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://matrix.to/#/!smJyjPsHsYizSKvvaE:matrix.org?via=matrix.org" target="_blank" rel="noopener" title="matrix.to" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
