@@ -1,5 +1,7 @@
 # docs
 
+# Archived, move to https://github.com/instantOS/instantos.github.io
+
 The official instantOS documentation  
 [instantos.io/docs](instantos.io/docs)
 
